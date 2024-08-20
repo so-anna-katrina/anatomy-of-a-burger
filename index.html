@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    hi
+<body class="h-screen">
+    <div class="h-[700px] flex justify-center bg-dim-red p-10">
+        <!-- <div class="h-52 flex justify-center text-[240px] leading-none font-Montserrat font-semibold text-[#F9F9F9]
+                    " style="text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;">
+            ANATOMY
+        </div> -->
+        <div class="h-52 w-[1170px]">
+            <canvas id="canvas" width="1200" height="300"></canvas>
+
+            <script>
+                const canvas = document.getElementById('canvas');
+                const ctx = canvas.getContext('2d');
+
+                ctx.font = `bold ${200}px Montserrat`;
+                ctx.strokeStyle = '#784618';
+                ctx.lineWidth = 5;
+                ctx.fillStyle = 'white';
+
+                ctx.strokeText('ANATOMY', 50, 200);
+                ctx.fillText('ANATOMY', 50, 200);
+            </script>
+        </div>
+    </div>
 </body>
 </html>

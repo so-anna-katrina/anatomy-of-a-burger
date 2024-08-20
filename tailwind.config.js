@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./*.{html,js}", "./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "dim-red": "#DC4949"
+    },
+    fontFamily: {
+      Montserrat: ['Montserrat']
+    }
+    },
   },
   plugins: [],
 }
