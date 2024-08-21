@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Anatomy of A Burger</title>
+    <link rel="preload" href="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" as="fetch">
 </head>
 <body class="h-screen">
-    <div class="h-[700px] flex justify-center bg-dim-red p-10">
-        <!-- <div class="h-52 flex justify-center text-[240px] leading-none font-Montserrat font-semibold text-[#F9F9F9]
-                    " style="text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;">
-            ANATOMY
-        </div> -->
-        <div class="h-52 w-[1170px]">
-            <canvas id="canvas" width="1200" height="300"></canvas>
 
-            <script>
-                const canvas = document.getElementById('canvas');
-                const ctx = canvas.getContext('2d');
+    <!-- HERO SECTION -->
+    <div id="spline-container" class="">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/bFcz84bJ-RHPq660/scene.splinecode"></spline-viewer>
+    </div>
 
-                ctx.font = `bold ${200}px Montserrat`;
-                ctx.strokeStyle = '#784618';
-                ctx.lineWidth = 5;
-                ctx.fillStyle = 'white';
+    <div id="hero-section" class="h-[690px] flex flex-col bg-dim-red p-10">
 
-                ctx.strokeText('ANATOMY', 50, 200);
-                ctx.fillText('ANATOMY', 50, 200);
-            </script>
+        <!-- TEXT "ANATOMY" -->
+        <div class="h-52 flex justify-center">
+            <canvas id="hero1-canvas" width="1380" height="200"></canvas>
+        </div>
+        <div class="h-52 flex justify-center">
+            <canvas id="hero2-canvas" width="1380" height="200"></canvas>
+        </div>
+        <div class="h-52 flex justify-center">
+            <canvas id="hero3-canvas" width="1380" height="200"></canvas>
         </div>
     </div>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
